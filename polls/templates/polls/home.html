@@ -1,0 +1,61 @@
+{% extends "bbase.html" %}
+
+{% block menu %}
+<div id='menu'><ul>
+	<li class='section-title'>PROJECTS</li>
+	<li><a href='http://www.paririahi.com/index.php?/work/projects/' onclick="do_click();">projects</a></li>
+	</ul>
+
+	<ul>
+	<li class='section-title'>OFFICE</li>
+	<li><a href='http://www.paririahi.com/index.php?/office/decemeber/' onclick="do_click();">profile</a></li>
+	<li><a href='http://www.paririahi.com/index.php?/office/team-members/' onclick="do_click();">contact</a></li>
+	</ul>
+
+	<ul>
+	<li class='section-title'>RESEARCH</li>
+	<li><a href='http://www.paririahi.com/index.php?/research/2012/' onclick="do_click();">themes</a></li>
+</ul></div>
+{% endblock %}
+
+{% block content %}
+<div class='slider-wrapper theme-light'>
+<div id='slider' class='nivoSlider'>
+<img src='http://www.paririahi.com/files/gimgs/1_stair-down-luminous-f.jpg' title=''/>
+<a href='http://www.paririahi.com/index.php?/work/chaumont-sur-loire/'>
+<img src='http://www.paririahi.com/files/gimgs/1_chaumontsurloire0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/murmur/'>
+<img src='http://www.paririahi.com/files/gimgs/1_murmur0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/ioi/'>
+<img src='http://www.paririahi.com/files/gimgs/1_ioi0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/work-d-2012/'>
+<img src='http://www.paririahi.com/files/gimgs/1_meublepartout0.jpg' title=''/></a>
+<img src='http://www.paririahi.com/files/gimgs/1_cs0.jpg' title=''/>
+</div>
+</div>
+{% endblock %}
+
+{% block dynamicJS %}
+<script type='text/javascript'>
+$(document).ready(function() { 
+	setTimeout('move_up()', 1); 
+	expandingMenu(0);  
+	expandingMenu(1);  
+	expandingMenu(2); 
+	expandingMenu(3);
+	expandingMenu(4);
+	expandingMenu(5);
+	expandingMenu(6);
+	expandingMenu(7);
+	expandingMenu(8);
+});
+
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect: 'sliceDown',
+		pauseTime: 6000,
+		pauseOnHover: true
+	});
+});
+</script>
+{% endblock %}

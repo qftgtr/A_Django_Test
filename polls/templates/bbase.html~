@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Main : Pari Riahi Architects, Inc. </title>
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/skeleton.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/nivo/nivo-slider.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/nivo/light.css' %}" />
+
+<script type='text/javascript' src="{% static 'polls/js/cookie.js' %}"></script>
+<script type='text/javascript' src="{% static 'polls/js/expandingMenus.js' %}"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type='text/javascript' src="{% static 'polls/nivo/jquery.nivo.slider.pack.js' %}"></script>
+<script type='text/javascript' src="{% static 'polls/js/jquery.cycle.all.js' %}"></script>
+
+</head>
+
+<body>
+<div class='skeletoncontainer' id='wrapper'>
+	<div class='sixteen columns'>
+		<div class="top-section" id='top-section'><h1><a href='http://paririahi.com/' alt='' title=''>Pari Riahi Architects, Inc.</a></h1></div>
+		{% block menu %}{% endblock %}
+		<div class='container'>
+			{% block content %}{% endblock %}
+		</div>
+	<div class='clear-both'><!-- --></div>
+	</div>
+	<div><footer>copyright @ 2013 Pari Riahi Architects, inc</footer></div>
+</div>
+</body>
+
+{% block dynamicJS %}
+
+<div class='container'>
+<div id='indexhibit'></div>
+</div>
+</html>

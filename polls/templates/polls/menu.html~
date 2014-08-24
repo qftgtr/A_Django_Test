@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block menu %}
+<div id='menu'>
+
+<ul>
+<li class='section-title'>PROJECTS</li>
+<li><a href='http://www.paririahi.com/index.php?/work/projects/' onclick="do_click();">projects</a></li>
+</ul>
+
+<ul>
+<li class='section-title'>OFFICE</li>
+<li><a href='http://www.paririahi.com/index.php?/office/decemeber/' onclick="do_click();">profile</a></li>
+<li><a href='http://www.paririahi.com/index.php?/office/team-members/' onclick="do_click();">contact</a></li>
+</ul>
+
+<ul>
+<li class='section-title'>RESEARCH</li>
+<li><a href='http://www.paririahi.com/index.php?/research/2012/' onclick="do_click();">themes</a></li>
+</ul>
+
+</div>

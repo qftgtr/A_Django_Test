@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>Main : Pari Riahi Architects, Inc. </title>
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/skeleton.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/nivo/nivo-slider.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/nivo/light.css' %}" />
+
+<script type='text/javascript' src="{% static 'polls/js/cookie.js' %}"></script>
+<script type='text/javascript' src="{% static 'polls/js/expandingMenus.js' %}"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type='text/javascript' src="{% static 'polls/nivo/jquery.nivo.slider.pack.js' %}"></script>
+<script type='text/javascript' src="{% static 'polls/js/jquery.cycle.all.js' %}"></script>
+
+</head>
+
+<body>
+<div class='skeletoncontainer' id='wrapper'>
+	<div class='sixteen columns'>
+        <div class="top-section" id='top-section'><h1><a href='http://paririahi.com/' alt='' title=''>Pari Riahi Architects, Inc.</a></h1></div>
+        {% block content %}{% endblock %}
+        <!--div class="bottom-section" id='copy'></div-->
+        <div class='container'>
+            <!-- text and image -->
+            <div class='slider-wrapper theme-light'>
+<div id='slider' class='nivoSlider'>
+<img src='http://www.paririahi.com/files/gimgs/1_stair-down-luminous-f.jpg' title=''/>
+<a href='http://www.paririahi.com/index.php?/work/chaumont-sur-loire/'><img src='http://www.paririahi.com/files/gimgs/1_chaumontsurloire0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/murmur/'><img src='http://www.paririahi.com/files/gimgs/1_murmur0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/ioi/'><img src='http://www.paririahi.com/files/gimgs/1_ioi0.jpg' title=''/></a>
+<a href='http://www.paririahi.com/index.php?/work/work-d-2012/'><img src='http://www.paririahi.com/files/gimgs/1_meublepartout0.jpg' title=''/></a>
+<img src='http://www.paririahi.com/files/gimgs/1_cs0.jpg' title=''/>
+</div>
+</div>
+
+            <!-- end text and image -->
+        </div>
+        <div class='clear-both'><!-- --></div>
+    </div>
+    <div><footer>copyright @ 2013 Pari Riahi Architects, inc</footer></div>
+</div>
+</body>
+
+<script type='text/javascript'>
+path = 'http://www.paririahi.com/files/gimgs/';
+
+$(document).ready(function() { 
+	setTimeout('move_up()', 1); 
+	expandingMenu(0);  
+	expandingMenu(1);  
+	expandingMenu(2); 
+	expandingMenu(3);
+	expandingMenu(4);
+	expandingMenu(5);
+	expandingMenu(6);
+	expandingMenu(7);
+	expandingMenu(8);
+});
+</script>
+
+<script type='text/javascript'>
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect: 'sliceDown',
+		pauseTime: 6000,
+		pauseOnHover: true
+	});
+});
+</script>
+
+<div class='container'>
+<div id='indexhibit'></div>
+</div>
+</html>
